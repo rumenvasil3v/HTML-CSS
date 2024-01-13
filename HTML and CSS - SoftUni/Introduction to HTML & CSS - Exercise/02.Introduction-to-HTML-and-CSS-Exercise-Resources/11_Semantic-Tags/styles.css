@@ -1,0 +1,17 @@
+.starting-part {
+    background-color: #f2dcbb;
+
+    widtH: 480px;
+    padding: 5px 15px;
+}
+
+.essential-part {
+    widtH: 480px;
+    background-color: #f9f7cf;
+}
+
+.ending-part {
+    width: 480px;
+    background-color: #f2dcbb;
+    padding: 5px 15px;
+}
