@@ -2,42 +2,20 @@ body {
     background-color: #e4e978;
 }
 
-.apple_info_section {
+article {
     border: 1px solid #b2ad7d;
-    width: 700px;
+    /* background-color: #4c7658; */
     background-color: #f2f4c0;
-    margin: 15px 10px;     
+    width: 700px;
+    margin: 15px 10px;
     padding: 5px 15px;
 }
 
-.comment_section {
+section {
+    color: #4c7658;
     font-style: italic;
 }
 
-.comment_section p {
+section p {
     color: #5c6e91;
-}
-
-.comment_section h2 {
-    color: #4c7658;
-}
-
-.comment_section h1 {
-    color: #4c7658;
-}
-
-.first_comment_article {
-    background-color: #f2f4c0;
-    width: 700px;
-    border: 1px solid #b2ad7d;
-    margin: 15px 10px;
-    padding: 5px 15px;
-}
-
-.second_comment_article {
-    background-color: #f2f4c0;
-    width: 700px;
-    border: 1px solid #b2ad7d;
-    margin: 15px 10px;
-    padding: 5px 15px;
 }
