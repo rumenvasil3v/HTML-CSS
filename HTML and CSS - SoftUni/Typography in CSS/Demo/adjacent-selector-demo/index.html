@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Selector Demo</title>
+    <style>
+
+        div + p {
+            color: green;
+        }
+
+        p + p {
+            color: magenta;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span>Hello</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsum!</p>
+        <div class="foo">Container</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsum!</p>
+    </div>
+    <p>Green</p>
+    <span>Hello</span>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        html {
+            font: 17px/1.5 sans-serif;
+        }
+
+        body {
+            background-color: rgb(172, 172, 105);
+            font: inherit;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: cursive;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 1.2;
+            margin: 0 0 1em 0;
+        }
+
+        h1 { font-size: 2.8em; } /*2.8 x 17 = 47.6px */
+        h2 { font-size: 2.2em; } /*2.2 x 17 = 37.4px */
+        h3 { font-size: 1.8em; } /*1.8 x 17 = 30.6px */
+        h4 { font-size: 1.4em; } /*1.4 x 17 = 23.8x  */
+        h5 { font-size: 1.2em; } /*1.2 x 17 = 20.4px */
+        h6 { font-size: 1.0em; } /*1.0 x 17 = 17px   */
+
+        /*line-height h1 -> 2.8 x 17 x 1.2 = 57.12px */
+        /*line-height h2 -> 2.2 x 17 x 1.2 = 44.88px */
+        /*line-height h3 -> 1.8 x 17 x 1.2 = 36.72px */
+        /*line-height h4 -> 1.4 x 17 x 1.2 = 28.56x  */
+        /*line-height h5 -> 1.2 x 17 x 1.2 = 24.48px */
+        /*line-height h6 -> 1.0 x 17 x 1.2 = 20.40px */
+
+        .site {
+            width: 66ch;
+            margin: 0 auto;
+        }
+
+        .site-header h1 a {
+            color: red;
+            text-decoration: none;
+        }
+
+        h1 + nav ul {
+            list-style: none;
+        }
+
+        h1 + nav ul li a {
+            color: red;
+        }
+
+        .site-main > article {
+            font-size: 1.5em;
+        }
+
+        .site-main article > section {
+            background-color:rgb(184, 150, 110);
+            padding: 2em;
+            margin: 0 0 1em 0;
+        }
+
+        .site-main h1:first-child {
+            color: green;
+        }
+
+        .site-main section h3 ~ p {
+            background-color:rgb(83, 82, 64);
+            font-size: 1.2em;
+            color: white;
+            padding: 1em;
+        }
+
+        .site-main article section h3 {
+            color:bisque
+        }
+
+        .site-main article header > h2 {
+            color: rgb(172, 172, 105);
+        }
+
+        .site-main article header {
+            background-color: antiquewhite;
+            padding: 1em;
+            margin: 0 0 1em 0;
+        }
+
+        .site-main article footer {
+            background-color: antiquewhite;
+            padding: 0.3em;
+            margin: 0.4em;
+        }
+
+        .site footer {
+            background-color: antiquewhite;
+            padding: 1em;
+            margin: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="site">
+        <header class="site-header">
+            <h1><a href="#">Site logo</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="site-main">
+
+            <h1>Title 1</h1>
+            <h2>Title 2</h2>
+            <h3>Title 3</h3>
+            <h4>Title 4</h4>
+            <h5>Title 5</h5>
+            <h6>Title 6</h6>
+
+            <article>
+                <header>
+                    <h2>Article Title</h2>
+                    <p>Proin in malesuada justo, id feugiat arcu. Pellentesque velit purus, porta et tristique ac, aliquet eget tortor. Etiam sit amet orci vel arcu dignissim luctus quis vitae ipsum. In auctor lorem ac massa facilisis porttitor. Duis a leo tortor. Aenean ultricies lectus ligula, ac sodales ante volutpat id. Vestibulum ornare ante turpis, ac posuere urna aliquet et. Fusce pretium tincidunt arcu, eget mollis velit posuere in. Mauris odio lacus, placerat eu feugiat non, sodales ac arcu. Nullam odio erat, vulputate vel nisi non, blandit viverra est. In congue sapien ac est tincidunt pellentesque. Donec cursus, tortor sit amet condimentum tempus, nibh nisl eleifend ligula, quis tincidunt urna tortor non urna.</p>
+                </header>
+
+                <section>
+                    <h3>Article Subtitle</h3>
+
+                    <p>Duis velit lectus, pharetra eget dapibus eu, tempor quis lectus. Aliquam a nisl eleifend, gravida nunc nec, vestibulum justo. Aenean turpis ante, vestibulum eget vehicula quis, tincidunt eu erat. Morbi eleifend magna orci, varius euismod enim tempor ut. Morbi sit amet feugiat mi, sed elementum tortor. Aliquam porttitor mauris lorem, non posuere odio vestibulum tristique. Quisque scelerisque rhoncus est. Quisque vitae sagittis arcu, vitae suscipit erat. Donec porta, diam et ultrices varius, orci lorem vulputate nulla, a pretium erat erat non justo. Ut vel dolor condimentum, condimentum lorem in, rutrum enim. Praesent congue nisi tincidunt ultrices elementum. Nam mollis porta accumsan. Nullam facilisis laoreet tortor. Nam ac eros malesuada, egestas elit at, pulvinar odio. Curabitur sapien nisi, congue vel nisl finibus, efficitur placerat mauris. Donec porttitor, quam et euismod viverra, ante justo vehicula diam, imperdiet imperdiet elit enim a nibh.</p>
+                    <p>Pellentesque finibus nulla augue, in commodo ante interdum sed. Nunc ut suscipit arcu. Curabitur suscipit nunc eget commodo aliquet. Maecenas interdum ac erat a porta. Vivamus molestie vitae ex non pharetra. Nunc porttitor erat pharetra dignissim pharetra. Nullam accumsan ex non accumsan porta. Mauris vitae erat iaculis, semper justo et, venenatis quam. Donec metus felis, lacinia at ultricies non, facilisis in libero. Nulla aliquam, leo aliquam imperdiet aliquet, orci ipsum pulvinar lectus, facilisis suscipit nunc est ut eros. Cras sagittis magna vitae iaculis feugiat.</p>
+                    <p>Sed ligula tortor, vulputate a risus quis, tempus feugiat tortor. Suspendisse vel sapien dapibus, lacinia urna eget, accumsan eros. Nunc elementum in purus quis ultrices. Nunc ornare pharetra nunc non facilisis. Duis consequat mollis velit, at facilisis lectus eleifend et. Proin sodales augue in quam sodales volutpat. In id orci ex.</p>
+                </section>
+
+                <section>
+                    <h3>Atricle Second Subtitle</h3>
+
+                    <p>Ut at massa eget nisi maximus molestie. In ut eleifend mi. Praesent sagittis faucibus nulla quis consectetur. Nulla sit amet volutpat metus, rhoncus varius enim. Integer tempor rhoncus posuere. Aenean dignissim magna nec laoreet aliquam. Praesent mollis risus erat, ut mattis orci feugiat eu. Aliquam ut euismod lorem, ac hendrerit velit. Nulla facilisi. Duis condimentum leo vel justo pellentesque, non gravida purus congue. Duis aliquam commodo arcu, sit amet placerat mauris varius vel.</p>
+                    <p>Mauris malesuada, nunc eget rhoncus sagittis, tortor lorem vulputate ligula, at efficitur tellus elit eu sem. Cras dictum ligula eget nunc commodo condimentum. Vivamus ut vehicula neque. Donec tempor est et lectus iaculis eleifend. Curabitur eget est nibh. Suspendisse posuere mi ac est fringilla, non accumsan felis aliquet. Praesent est sapien, aliquet at urna quis, lobortis aliquam leo.</p>
+                    <p>Proin hendrerit egestas lacus, vel sodales dolor vestibulum commodo. In pharetra posuere felis, quis auctor lectus. Aliquam blandit feugiat sapien et sollicitudin. Ut hendrerit ac velit vitae dictum. Quisque aliquet arcu libero, vel ultrices velit vestibulum a. Etiam venenatis auctor accumsan. Praesent odio orci, porttitor in velit quis, tempus vehicula ante. Maecenas vehicula, nulla ut lacinia tempus, risus libero venenatis tortor, vel euismod sapien orci non neque. In ac convallis tortor. Donec ut volutpat massa. Aenean dapibus lobortis enim ut placerat. Fusce enim ante, pharetra vitae felis in, porttitor euismod quam.</p>
+                </section>
+
+                <footer>
+                    <p>Published on <time datetime="2010-06-12">June 12</time></p>    
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2>Article Title</h2>
+                    <p>Proin in malesuada justo, id feugiat arcu. Pellentesque velit purus, porta et tristique ac, aliquet eget tortor. Etiam sit amet orci vel arcu dignissim luctus quis vitae ipsum. In auctor lorem ac massa facilisis porttitor. Duis a leo tortor. Aenean ultricies lectus ligula, ac sodales ante volutpat id. Vestibulum ornare ante turpis, ac posuere urna aliquet et. Fusce pretium tincidunt arcu, eget mollis velit posuere in. Mauris odio lacus, placerat eu feugiat non, sodales ac arcu. Nullam odio erat, vulputate vel nisi non, blandit viverra est. In congue sapien ac est tincidunt pellentesque. Donec cursus, tortor sit amet condimentum tempus, nibh nisl eleifend ligula, quis tincidunt urna tortor non urna.</p>                    
+                </header>
+
+                <section>
+                    <h3>Article Subtitle</h3>
+
+                    <p>Duis velit lectus, pharetra eget dapibus eu, tempor quis lectus. Aliquam a nisl eleifend, gravida nunc nec, vestibulum justo. Aenean turpis ante, vestibulum eget vehicula quis, tincidunt eu erat. Morbi eleifend magna orci, varius euismod enim tempor ut. Morbi sit amet feugiat mi, sed elementum tortor. Aliquam porttitor mauris lorem, non posuere odio vestibulum tristique. Quisque scelerisque rhoncus est. Quisque vitae sagittis arcu, vitae suscipit erat. Donec porta, diam et ultrices varius, orci lorem vulputate nulla, a pretium erat erat non justo. Ut vel dolor condimentum, condimentum lorem in, rutrum enim. Praesent congue nisi tincidunt ultrices elementum. Nam mollis porta accumsan. Nullam facilisis laoreet tortor. Nam ac eros malesuada, egestas elit at, pulvinar odio. Curabitur sapien nisi, congue vel nisl finibus, efficitur placerat mauris. Donec porttitor, quam et euismod viverra, ante justo vehicula diam, imperdiet imperdiet elit enim a nibh.</p>
+                    <p>Pellentesque finibus nulla augue, in commodo ante interdum sed. Nunc ut suscipit arcu. Curabitur suscipit nunc eget commodo aliquet. Maecenas interdum ac erat a porta. Vivamus molestie vitae ex non pharetra. Nunc porttitor erat pharetra dignissim pharetra. Nullam accumsan ex non accumsan porta. Mauris vitae erat iaculis, semper justo et, venenatis quam. Donec metus felis, lacinia at ultricies non, facilisis in libero. Nulla aliquam, leo aliquam imperdiet aliquet, orci ipsum pulvinar lectus, facilisis suscipit nunc est ut eros. Cras sagittis magna vitae iaculis feugiat.</p>
+                    <p>Sed ligula tortor, vulputate a risus quis, tempus feugiat tortor. Suspendisse vel sapien dapibus, lacinia urna eget, accumsan eros. Nunc elementum in purus quis ultrices. Nunc ornare pharetra nunc non facilisis. Duis consequat mollis velit, at facilisis lectus eleifend et. Proin sodales augue in quam sodales volutpat. In id orci ex.</p>
+                </section>
+
+                <section>
+                    <h3>Atricle Second Subtitle</h3>
+
+                    <p>Ut at massa eget nisi maximus molestie. In ut eleifend mi. Praesent sagittis faucibus nulla quis consectetur. Nulla sit amet volutpat metus, rhoncus varius enim. Integer tempor rhoncus posuere. Aenean dignissim magna nec laoreet aliquam. Praesent mollis risus erat, ut mattis orci feugiat eu. Aliquam ut euismod lorem, ac hendrerit velit. Nulla facilisi. Duis condimentum leo vel justo pellentesque, non gravida purus congue. Duis aliquam commodo arcu, sit amet placerat mauris varius vel.</p>
+                    <p>Mauris malesuada, nunc eget rhoncus sagittis, tortor lorem vulputate ligula, at efficitur tellus elit eu sem. Cras dictum ligula eget nunc commodo condimentum. Vivamus ut vehicula neque. Donec tempor est et lectus iaculis eleifend. Curabitur eget est nibh. Suspendisse posuere mi ac est fringilla, non accumsan felis aliquet. Praesent est sapien, aliquet at urna quis, lobortis aliquam leo.</p>
+                    <p>Proin hendrerit egestas lacus, vel sodales dolor vestibulum commodo. In pharetra posuere felis, quis auctor lectus. Aliquam blandit feugiat sapien et sollicitudin. Ut hendrerit ac velit vitae dictum. Quisque aliquet arcu libero, vel ultrices velit vestibulum a. Etiam venenatis auctor accumsan. Praesent odio orci, porttitor in velit quis, tempus vehicula ante. Maecenas vehicula, nulla ut lacinia tempus, risus libero venenatis tortor, vel euismod sapien orci non neque. In ac convallis tortor. Donec ut volutpat massa. Aenean dapibus lobortis enim ut placerat. Fusce enim ante, pharetra vitae felis in, porttitor euismod quam.</p>
+                </section>
+
+                <footer>
+                    <p>Published on <time datetime="2010-06-12">June 12</time></p>    
+                </footer>
+            </article>
+        </main>
+
+        <footer class="site-footer">
+            <p>All rights reserved &copy; 2010-2024</p>
+        </footer>
+    </div>
+</body>
+</html>
