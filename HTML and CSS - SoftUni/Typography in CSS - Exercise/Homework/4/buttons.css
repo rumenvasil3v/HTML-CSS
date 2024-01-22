@@ -13,7 +13,7 @@ body, input, button {
     padding: 0.5em 2em;
     cursor: pointer;
     border-radius: 2em;
-    margin: 0 0.5em;
+    margin: 0 0.5em 3em 0;
 }
 
 .button.fill {
