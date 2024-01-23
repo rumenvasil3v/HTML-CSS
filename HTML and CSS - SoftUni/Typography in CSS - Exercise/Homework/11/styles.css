@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 html {
     font: 16px/1.5 'Helvetica', sans-serif;
 }
@@ -9,13 +11,18 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Georgia', serif;
+    /* font-family: 'Georgia', serif; */
+    font-family: 'Great Vibes', cursive;
 }
 
 blockquote {
     border-left: 1px solid;
     border-left-color: rgb(221, 221, 221);
     font-style: italic;
+}
+
+table {
+    border-collapse: collapse;
 }
 
 th {
@@ -26,6 +33,7 @@ th {
 th, td {
     border: 1px solid #bdbaba;
     width: 900px;
+    padding: 0.3em;
 }
 
 .author {
