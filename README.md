@@ -1,2 +1,2 @@
 # HTML-CSS
-HTML and CSS learning in progress
+HTML and CSS learning in process
