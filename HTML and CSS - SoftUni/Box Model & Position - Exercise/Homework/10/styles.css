@@ -1,0 +1,19 @@
+.viewport {
+    display: block;
+    box-sizing: border-box;
+}
+
+.card {
+    display: block;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    padding: 100px;
+    text-align: center;
+}
+
+.second_card {
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    padding: 500px;
+    text-align: center;
+}
