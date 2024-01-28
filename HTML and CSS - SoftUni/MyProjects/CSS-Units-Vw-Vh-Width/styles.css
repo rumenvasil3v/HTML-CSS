@@ -1,0 +1,11 @@
+.site_main {
+    width: 50vw;
+    border: 2px solid #000;
+}
+
+.main_header {
+    background-color: aqua;
+    padding: 2em;
+    width: 100vw;
+    height: 100vh;
+}
