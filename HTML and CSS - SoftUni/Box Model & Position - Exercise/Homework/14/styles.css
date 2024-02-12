@@ -1,0 +1,79 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+/* body {
+    background-color: #7c6767;
+} */
+
+ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 2em;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li:not(:nth-child(5)) {
+    margin-inline-end: 1.5em;
+}
+
+ul > li > a {
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+ul li:nth-child(1) a::before {
+    font-family: 'FontAwesome';
+    content: '\f082 ';
+    color: black;
+}
+
+ul li:nth-child(1) a:hover::before {
+    color: #0165E1;
+}
+
+ul li:nth-child(2) a::before {
+    font-family: 'FontAwesome';
+    content: '\f099  ';
+}
+
+ul li:nth-child(2) a:hover::before {
+    color: #1DA1F2;
+}
+
+ul li:nth-child(3) a::before {
+    font-family: 'FontAwesome';
+    content: '\f2b3';
+}
+
+ul li:nth-child(3) a:hover::before {
+    color: #db4a39;
+}
+
+ul li:nth-child(4) a::before {
+    font-family: 'FontAwesome';
+    content: '\f08c';
+}
+
+ul li:nth-child(4) a:hover::before {
+    color: #0A66C2;
+}
+
+ul li:nth-child(5) a::before {
+    font-family: 'FontAwesome';
+    content: '\f16d';
+}
+
+ul li:nth-child(5) a:hover::before {
+    color: #405DE6;
+}
+
+ul li:nth-child(1) a::before,
+ul li:nth-child(2) a::before,
+ul li:nth-child(3) a::before,
+ul li:nth-child(4) a::before,
+ul li:nth-child(5) a::before {
+    color: black;
+}

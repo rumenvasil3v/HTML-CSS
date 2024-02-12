@@ -1,0 +1,119 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 1em/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: inherit;
+}
+
+body {
+    font: inherit;
+    background-color: rgb(238, 238, 238);
+    padding: 6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: 1em/1.2 'Georgia', serif;
+    padding-block-end: 0.3em;
+}
+
+h1 { font-size: 2.6em; }
+h2 { font-size: 2.0em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
+
+a {
+    color: rgb(0, 102, 0); 
+}
+
+img {
+    background-color: rgb(255, 255, 255); 
+}
+
+p {
+    padding-block-end: 2em;
+}
+
+section img {
+    float: left;
+    margin-inline-end: 2em;
+    margin-block-end: 1em;
+    padding: 0.4em;
+    border: 5px solid black;
+    box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.25);
+}
+
+.quote {
+    font-family: 'Georgia', serif;
+    width: 20em;
+    color: #8a8080;
+    float: right;
+    font-style: italic;
+    padding-inline-start: 3em;
+}
+
+.author {
+    text-align: end;
+}
+
+.site-title {
+    font-weight: 700;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-inline-end: 13.6em;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline-block;  
+    color:rgb(28, 116, 28);
+    padding: 0 1em;
+}
+
+.site-title, .navigation {
+    display: inline-block;
+}
+
+.site-header {
+    border-bottom: 3px solid black;
+    padding-block-end: 0.4em;
+    margin-block-end: 2em;
+    max-width: 76em;
+}
+
+.site-main {
+    max-width: 45em;
+}
+
+.site-main article > img {
+    float: right;
+    margin-inline-start: 2em;
+    margin-block-end: 1em;
+    padding: 0.4em;
+    border: 5px solid black;
+    box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.25);
+}
+
+.site-main,
+.side-bar {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.side-bar {
+    margin-inline-start: 11em;
+}
+
+.side-bar nav {
+    margin-inline-start: 2.5em;
+    padding-block-end: 1em;
+}
+
+.side-bar nav li a {
+    text-decoration: none;
+}
