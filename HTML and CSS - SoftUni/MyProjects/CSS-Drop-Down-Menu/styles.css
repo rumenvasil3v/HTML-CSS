@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 4em;
+}
+
+nav li {
+    display: block;
+    position: relative;
+    margin: 0.5em 0;
+    border: 2px solid black;
+}
+
+nav li a {
+    text-decoration: none;
+    background-color: rgb(56, 36, 172);
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 0.1em;
+    display: block;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+nav ul ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 0.2em;
+    margin-top: -0.5em;
+}
+
+nav li:hover > ul {
+    display: block;
+}
