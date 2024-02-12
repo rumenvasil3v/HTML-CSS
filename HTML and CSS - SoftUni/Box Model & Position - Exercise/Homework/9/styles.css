@@ -12,11 +12,11 @@ aside {
     padding: 0 1em;
 }
 
-.site_article header, aside {
+.site_article, aside {
     display: inline-block;
+    vertical-align: top;
 }
 
 .site_article {
     width: 50%;
 }
-

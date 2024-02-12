@@ -3,11 +3,24 @@ main {
     height: 140px;
 }
 
-img {
-    border: 1px solid #d1d1d1;
+img.float-left {
+    border: solid #000;
+    border-width: 0px 12px 12px 0px;
     float: left;
     margin-right: 19px;
     padding-right: 19px;
+    padding-block-end: 19px;
+    margin-block-end: 19px;
+}
+
+img.float-right {
+    border: solid #000;
+    border-width: 0px 0px 12px 12px;
+    float: right;
+    margin-left: 19px;
+    padding-left: 19px;
+    padding-block-end: 19px;
+    margin-block-end: 19px;
 }
 
 p {

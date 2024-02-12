@@ -6,25 +6,28 @@ body {
     font: inherit;
 }
 
-hr {
-    border: 1px solid #000;
-}
-
 h1 {
     margin-top: 0px;
 }
 
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
 .site {
-    width: 100ch;
+    width: 105ch;
     margin: 0 auto;
 }
 
 .site_header {
     margin-bottom: 0px;
+    border-bottom: 2px solid black;
 }
 
-.site_header * {
-    display: inline-block;
+.site_header nav,
+.site_header h1 {
+    display: inline;
 }
 
 .site_header h1 {
@@ -36,9 +39,19 @@ h1 {
 .site_header a {
     color: green;
     text-decoration: none;
-    margin: 10px;
+    padding: 0.5em 1em;
+}
+
+.site_header nav ul li {
+    padding: 0 0.5em;
+    display: inline-block;
+}
+
+.site_header a:hover {
+    background-color: green;
+    color: white;
 }
 
 .site_header nav {
-    margin-left: 120px;
+    margin-left: 267px;
 }
