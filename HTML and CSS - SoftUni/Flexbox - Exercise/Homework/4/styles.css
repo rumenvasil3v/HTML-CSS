@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body {
+    padding: 2em;
+}
+
+span {
+    border: 1px solid black;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 40em;
+    max-width: 65vw;
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 2em;
+}
+
+.notes span {
+    flex: 1 0 20em;
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    flex: 3 0 5em;
+}
+
+.week-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.weekend-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.week * {
+    flex: 2 1 10em;
+}

@@ -1,0 +1,22 @@
+html {
+    font: 1rem/1.5 'Helvetica', sans-serif; 
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font: 2.0em/1.2 'Georgia', serif;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70vw;
+    column-gap: 4em;
+}

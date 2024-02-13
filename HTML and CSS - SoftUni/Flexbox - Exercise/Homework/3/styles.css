@@ -1,0 +1,72 @@
+html {
+    font-size: 20px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    padding: 2em;
+    font-family: inherit;
+}
+
+span {
+    border: 1px solid black;
+    padding: 1.2em 2.5em;
+}
+
+.container {
+    display: flex;
+    max-width: 15vw;
+    height: 35rem;
+    flex-direction: column;
+    gap: 0.4em;
+    flex-wrap: wrap;
+}
+
+.letter.S {
+    order: -12;
+}
+
+.letter.e {
+    order: -11;
+}
+
+.letter.m {
+    order: -10;
+}
+
+
+.letter.a {
+    order: -9;
+}
+
+.letter.n {
+    order: -8;
+}
+
+.letter.t {
+    order: -7;
+}
+
+.letter.i {
+    order: -6;
+}
+
+.letter.c {
+    order: -5;
+}
+
+.letter.H {
+    order: -4;
+}
+
+.letter.T {
+    order: -3;
+}
+
+.letter.M {
+    order: -2;
+}
+
+.letter.L {
+    order: -1;
+}

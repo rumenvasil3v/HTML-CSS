@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 1rem/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body {
+    font: inherit;
+    padding: 4em;
+}
+
+p {
+    margin-block-end: 2em;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
+
+h1 {
+    font: 2.6em/1.2 'Georgia', serif;
+    padding-block-end: 0.4em;
+}
+
+.site-header {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-block-end: 1.4em;
+    margin-block-end: 2em;
+}
+
+p.site-title {
+    margin: 0;
+}
+
+.site-header nav ul {
+    width: 22em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.site-title a {
+    color: black;
+    font-size: 4em;
+    font-weight: 600;
+}
