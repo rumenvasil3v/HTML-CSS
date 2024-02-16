@@ -1,0 +1,85 @@
+
+/* Object fit Solution */
+/* * {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    padding: 4em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.gallery {
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.gallery li {
+    list-style: none outside;
+    border: 10px solid black;
+    flex: 0 0 300px;
+    padding: 1em;
+    background-color: #fff;
+} */
+
+
+/* Flexbox into flexbox solution with align-items: center;*/
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    padding: 4em;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.gallery {
+    max-width: 70em;
+}
+
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.gallery li {
+    list-style: none outside;
+    border: 10px solid black;
+    flex: 0 0 300px;
+    padding: 1em;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 
+             0 0 29px 4px rgba(0, 0, 0, 0.5),
+             0 0 29px 12px rgba(0, 0, 0, 0.5) inset;
+}

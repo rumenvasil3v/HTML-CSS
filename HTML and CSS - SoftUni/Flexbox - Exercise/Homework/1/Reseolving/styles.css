@@ -13,7 +13,7 @@ body {
 }
 
 header, aside, main, footer {
-    padding: 2rem;
+    padding: 2em;
     background-color: #fff;
     border-radius: 0.4rem;
     border: 1px solid #9c9797;
@@ -26,21 +26,21 @@ header, footer {
 }
 
 main, aside {
-    height: 20em;
+    min-height: 20em;
 }
 
 header {
-    height: 10em;
+    min-height: 10em;
 }
 
 main {
-    flex: 1 0 40rem;
+    flex: 1 0 60%;
 }
 
 aside {
-    flex: 2 1 20rem;
+    flex: 1 1 auto;
 }
 
 footer {
-    height: 7em;
+    min-height: 7em;
 }

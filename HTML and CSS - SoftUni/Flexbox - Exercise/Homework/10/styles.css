@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.container {
+    padding: 2em;
+    display: flex;
+    width: 60vw;
+}
+
+.image {
+    border-radius: 22px;
+    box-shadow: 0px 0px 23px 1px rgba(0, 0, 0, 0.5);
+    margin-inline-end: 2em;
+    flex-basis: 0;
+    flex-shrink: 1;
+    flex-grow: 1;
+    width: 20em;
+    object-fit: cover;
+}
+
+.second {
+    flex-basis: 0;
+    flex-shrink: 0;
+    flex-grow: 4;
+}
