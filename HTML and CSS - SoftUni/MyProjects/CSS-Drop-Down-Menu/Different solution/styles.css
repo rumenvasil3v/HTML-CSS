@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 4em;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0.2em 0;
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+    margin-top: -0.2em;
+    margin-left: 0.1em;
+}
+
+nav ul ul li {
+    padding: 0.2em 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav li {
+    display: block;
+    /* border: 1px solid black;
+    padding: 0.5em; */
+    position: relative;
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+nav a {
+    background-color: #690;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: block;
+    border-radius: 0.3em;
+}
+
+nav li:hover > a,
+nav a:hover {
+    background-color: #69A;
+}
