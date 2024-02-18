@@ -14,6 +14,9 @@
     }
 
     body {
+        background: url('https://images.unsplash.com/photo-1708169542550-f627d8a4bd26?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-repeat: no-repeat;
+        background-size: cover;
         background-color: rgb(238, 238, 238);
         padding: 2em;
         flex-direction: column;
@@ -29,8 +32,35 @@
         width: 100%;
     }
 
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+    }
+
     .card {
-        
+        flex: 0 0 6em;
+        width: 6em;
+        height: 40em;
+        overflow: hidden;
+        position: relative;
+        border-radius: 0.5em;
+        box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.5);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .card img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .card:hover {
+        flex: 0 0 50em;
     }
 
     </style>
