@@ -51,7 +51,6 @@ nav a {
     border-radius: 0.3em;
 }
 
-nav li:hover > a,
-nav a:hover {
+nav li:hover > a {
     background-color: #69A;
 }
