@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font: 16px/1.5 'Inter', sans-serif;
+            box-sizing: inherit;
+        }
+
+        body {
+            font: inherit;
+            background-color: aquamarine;
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            gap: 10em;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.2;
+        }
+
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2.0em; }
+        h3 { font-size: 1.6em; }
+        h4 { font-size: 1.4em; }
+        h5 { font-size: 1.2em; }
+        h6 { font-size: 1.0em; }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .media {
+            width: 27em;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid black; */
+            gap: 1.7em;
+        }
+
+        .header-container {
+            width: 23em; 
+        }
+
+        .media {
+            box-shadow: 6px 6px 15px 2px rgba(0, 0, 0, 1);
+        }
+
+        .btn {
+            width: 10em;
+            padding: 0.9em 1em;
+            border-radius: 0.4em;
+            cursor: pointer;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+        }
+
+        .btn.green {
+            border: 1px solid rgb(14, 27, 25);
+            background-color: rgb(66, 170, 89);
+            color: rgb(47, 70, 47);
+            transition: all 0.2s ease-in-out; 
+        }
+
+        .btn.white {
+            border: none;
+            color: rgb(106, 108, 98);
+        }
+
+        .btn.green:hover {
+            background-color: rgb(14, 27, 25);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+        <section class="main-content">
+            <div class="header-container"><h1>Magnificent things are very simple</h1></div>
+            <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non volutpat turpis.</p>
+            <p>Mauris luctus rutrum mi ut rhoncus. Integer in dignissim tortor.</p></div>
+            <div class="buttons">
+                <button class="btn green">Get Started</button>
+                <button class="btn white">Learn More</button>
+            </div>
+        </section>
+        
+        <div class="media">
+            <img src="images/picture.jpg" alt="">
+        </div>
+</body>
+</html>
+
+<!-- Magnificent things are very simple
+
+
+
+
+
+
+
+ -->
