@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>
+        *, *::after, *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            box-sizing: inherit;
+            font: 16px/1.5 'Helvetica', sans-serif;
+        }
+
+        body {
+            font: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1 {
+            font-size: 2.6em;
+        }
+
+        .card {
+            max-width: 70em;
+            display: flex;
+            flex-direction: row;
+            padding: 3em;
+            border: 4px solid #000;
+            border-radius: 1em;
+            background-color: #1881B6;
+            overflow: hidden;
+            justify-content: space-between;
+            gap: 0.9em;
+        }
+
+        .card .content {
+            flex: 0 0 61%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            /* border: 2px solid black; */
+            gap: 1em;
+        }
+
+        .card .media {
+            flex: 0 0 39%;
+            /* border: 2px solid black; */
+        }
+
+        .card .unique {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .card .main-text {
+            text-indent: 2.6em;
+            line-height: 2.0;
+            width: 93%;
+        }
+
+        .card .header {
+            color: #fff;
+            font-weight: normal;
+        }
+
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .buttons-wrapper {
+            display: flex;
+            flex-direction: row;
+            max-width: 87%;
+            /* border: 2px solid #000; */
+            justify-content: space-evenly;
+        }
+
+        .btn {
+            border: 1px solid #000;
+            border-radius: 0.4em;
+            padding: 0.5em 1em;
+        }
+
+        .btn.sales {
+            color: #fff;
+            font-weight: bold;
+            background-color: #B6416D;
+        }
+
+        .btn.more {
+            color: #000;
+            font-weight: bold;
+            background-color: #1881B6;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <span class="unique">Raccoon Journal Entry</span>
+            <div class="text-wrapper">
+                <h1 class="header">Chillhop Essentials - Winter 2023</h1>
+                <p class="main-text">We introduce to you the first Chillhop Essentials of 2023 with our Spring release: a 26 song compilation available on purple double vinyl. The seasonal release comes complete with an immersive playground for our Raccoon to roam. With all art handled by illustrator/animator Rafael Araújo, the Essentials 2020 universe shows that anything is possible. Follow along and help us explore.</p>
+            </div>
+                <div class="buttons-wrapper">
+                <button class="btn sales">Contact Sales</button>
+                <button class="btn more">Learn More</button>
+            </div>
+        </div>
+        <div class="media">
+            <img src="image/img.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
