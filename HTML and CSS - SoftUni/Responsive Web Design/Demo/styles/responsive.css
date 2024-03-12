@@ -1,0 +1,112 @@
+/* Media Types Example */
+
+    /* @media screen {
+        .site-main h1 {
+            color: red;
+        }
+    }
+
+    @media print {
+        .site-aside,
+        .site-header {
+            display: none;
+        }
+
+        .site-footer {
+            font-style: italic;
+        }
+    }
+
+
+
+
+/* Media Features example */
+
+    /* @media (min-width: 600px) and (max-width: 600px) {
+        .site-main {
+            color: blue;
+        }
+    }
+
+    @media (min-width: 500px) and (max-width: 800px) {
+        .site-main {
+            color: blue;
+        }
+    } */
+
+    /* @media (min-width: 800px) {
+        .site-main {
+            color: blue;
+        }
+    } */
+
+/* Media min-width and max-width overwrite */
+
+    /* @media (min-width: 500px) {
+        .site-main {
+            background-color: red;   
+        }
+    }
+
+    @media (max-width: 600px) {
+        .site-main {
+            background-color: khaki;   
+        }
+    } */
+
+/* @media (hover: hover) {
+    .site-main {
+        background-color: khaki;
+    }
+} */
+
+/* @media (max-width: 800px) {
+    .site-container {
+        flex-direction: column;
+    }
+} */
+
+/* @media (min-width: 3600px) {
+    .site-container {
+        border: 2px solid red;
+        flex-direction: column;
+    }
+} */
+
+
+/* Mobile first is additive, not subtractive!!! */
+
+/* Default, No Media Query - Phone */
+body {
+
+}
+
+/* 600px and up - Tablet */
+@media (min-width: 600px) {
+    div {
+        /* styles */
+    }
+}
+
+/* 1000px and up - Desktop */
+@media (min-width: 1000px) {
+    div {
+        /* styles */
+    }
+}
+
+/* 2500px and up - 1440p and up */
+@media (min-width: 2500px) {
+    div {
+        /* styles */
+    }
+}
+
+/* 3600px and up - 4k and up */
+@media (min-width: 3600px) {
+    div {
+        /* styles */
+    }
+}
+
+/* The idea is to aim for the range of the device, similiar to guessing, but not to aim for specific px, otherwise it will be cruel */

@@ -1,0 +1,21 @@
+.navigation ul {
+    display: flex;
+    width: 21em;
+    justify-content: space-between;
+}
+
+.navigation ul li {
+    list-style: none;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #090;
+    background-color: antiquewhite;
+    padding: 0.5em 1em;
+    border-radius: 0.4em;
+}
+
+.navigation ul li a:hover {
+    background-color: beige;
+}

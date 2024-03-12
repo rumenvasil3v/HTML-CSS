@@ -1,0 +1,36 @@
+.site-main {
+    container-type: inline-size;
+    container-name: main;
+}
+
+.section-about {
+    border: 1px solid #ccc;
+    padding: 2em;
+    border-radius: 0.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* @media (min-width: 900px) {
+    .section-about {
+        display: flex;
+        gap: 2em;
+    }
+} */
+
+@container (min-width: 900px) {
+    .section-about {
+        flex-direction: row;
+    }
+}
+
+.section-about figure {
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    overflow: hidden;
+}
+
+.section-about figure figcaption {
+    padding: 0.4em 1em;
+}
