@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 12px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+@media (min-width: 500px) {
+    html {
+        font: 14px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    }
+}
+
+@media (min-width: 600px) {
+    html {
+        font: 16px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    }
+}
+
+@media (min-width: 768px) {
+    .image.nature {
+        float: left;
+        margin-inline-end: 2em;
+        margin-block-end: 1em;
+    }
+
+    .image.underground {
+        float: right;
+        margin-inline: 2em;
+        margin-block-end: 1em;
+    }
+}
+
+@media (min-width: 800px) {
+    html {
+        font: 18px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .page {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+         max-width: 100em; 
+    }
+}
+
+@media (min-width: 1300px) {
+    html {
+        font: 21px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    }
+
+    .container {
+        max-width: 70em;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1800px) {
+    html {
+        font: 23px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    }
+}
+
+body {
+    font: inherit;
+    padding: 5em;
+    background-color: rgb(238, 238, 238);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif;
+    font-weight: normal;
+    padding-block-end: 0.3em;
+}
+
+h1 { font-size: 2.4em; }
+h2 { font-size: 2.0em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
+
+img {
+    background-color: rgb(255, 255, 255);
+    padding: 0.5em;
+    border: 3px solid black;
+    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.5);
+}
+
+blockquote {
+    font-family: 'Georgia', serif;
+}
+
+p {
+    padding-block-end: 2em;
+}
+
+.side-bar a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+.side-bar ul {
+    margin: 1em 2.5em;
+}
+
+.side-bar {
+    flex-basis: 38%;
+}
+
+.site-main {
+    flex-basis: 62%;
+}
+
+.site-header {
+    flex-basis: 100%;
+    border-bottom: 2px solid black;
+    margin-block-end: 1.5em;
+}
+
+.site-title {
+    padding-block-end: 1em;
+}
+
+.site-header .site-title a {
+    text-decoration: none;
+    color: #000;
+    font-size: 3.5em;
+    padding: 0;
+    font-weight: 600;
+}
+
+.author {
+    display: block;
+    text-align: end;
+}
+
+.quote {
+    width: 21em;
+    float: right;
+    margin-inline-start: 3em;
+    margin-block-end: 1em;
+    padding-inline-start: 1em;
+    border-left: 3px solid rgba(143, 136, 136, 0.3);
+}
+
+.quote, .author {
+    color: #8f8888;
+    font-style: italic;
+}

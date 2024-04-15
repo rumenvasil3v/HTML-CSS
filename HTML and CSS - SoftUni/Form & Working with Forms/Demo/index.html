@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Working with Forms</h1>
+
+    <h2>Search by Google</h2>
+    <form action="https://duckduckgo.com" method="get">
+        <label for="search-field">Search:</label>
+        <input type="text" name="q" id="search-field" />
+        <input type="submit" value="Search">
+    </form>
+
+    <h2>Radio Buttons</h2>
+    <form action="#" method="get">
+        
+        <p>Pick your poison:</p>
+        <input type="radio" name="poison" value="Beer" id="poison-beer">
+        <label for="poison-beer">Beer</label>
+
+        <input type="radio" name="poison" value="Wine" id="poison-wine">
+        <label for="poison-wine">Wine</label>
+
+        <input type="radio" name="poison" value="Health Potion" id="poison-health-potion">
+        <label for="poison-health-potion">Health Potion</label>
+
+        <p>
+            <input type="submit" value="Pick">
+        </p>
+    </form>
+
+    <h2>Checkboxes</h2>
+    <form action="#" method="get">
+        
+        <fieldset>
+            <legend>My first form</legend>
+
+            <p>Pick your poison:</p>
+            <input type="checkbox" name="poison" value="Beer" id="poison2-beer">
+            <label for="poison2-beer">Beer</label>
+
+            <input type="checkbox" name="poison" value="Wine" id="poison2-wine">
+            <label for="poison2-wine">Wine</label>
+
+            <input type="checkbox" name="poison" value="Health Potion" id="poison2-health-potion">
+            <label for="poison2-health-potion">Health Potion</label>
+            <p>
+                <select name="city" id="citySelect">
+                    <option value="">Please pick a city</option>
+                    <option value="veliko-tarnovo">Veliko Tarnovo</option>
+                    <option value="sofia">Sofia</option>
+                    <option value="plovdiv">Plovdiv</option>
+                </select>
+            </p> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Login Form</legend>
+
+            <input type="text" name="username" placeholder="Username" id="username-field" required>
+            <input type="password" name="password" placeholder="Password" id="password-field" required>
+            <input type="submit" value="Login">
+        </fieldset>
+    </form>
+</body>
+</html>

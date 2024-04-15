@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.site-header p {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-main {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4em; */
+}

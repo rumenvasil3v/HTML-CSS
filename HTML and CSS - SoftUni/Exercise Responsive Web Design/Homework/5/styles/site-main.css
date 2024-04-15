@@ -1,0 +1,190 @@
+.site-main .website-request {
+    display: flex;
+    align-items: center;
+    gap: 3.5em;
+    font-weight: 651;
+    color: black;
+    margin-inline-start: 37em;
+}
+
+.site-main .website-request-content {
+    flex: 0 0 48%;
+}
+
+.site-main .website-request-content .website-request-button {
+    padding: 0.5em 1em;
+    background-color: white;
+    color: black;
+    border-radius: 0.4em;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.fa-solid.fa-earth-americas {
+    color: black;
+    font-size: 12em;
+}
+
+.site-main .company-team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    padding-block-start: 6em;
+}
+
+.site-main .company-team-list h2 {
+    position: relative;
+}
+
+.site-main .company-team-list h2 .border-bottom {
+    border-bottom: 3px solid black;
+    width: 2.7em;
+    position: absolute;
+    top: 115%;
+    left: 20%;
+}
+
+.site-main .company-team-list .team-list {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 78em;
+}
+
+.site-main .company-team-list .team-list .member-card {
+    flex: 0 0 19em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+    font-style: italic;
+}
+
+.site-main .company-team-list .team-list .member-card .member-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+}
+
+.member-name {
+    font-weight: bold;
+}
+
+.site-main .company-team-list .team-list .member-card .member-card-media {
+    width: 8em;
+    border-radius: 50%;
+    height: 128px;
+    object-fit: cover;
+    box-shadow: 0 0 19px 1px rgba(0, 0, 0, 0.4);
+}
+
+.site-main .sign-up-newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #68347B;
+    color: white;
+    height: 12em;
+    padding: 1em;
+    box-shadow: 0 0 19px 1px rgba(0, 0, 0, 0.4);
+}
+
+.site-main .sign-up-newsletter h2 {
+    position: relative;
+}
+
+.site-main .sign-up-newsletter h2 .border-bottom {
+    border-bottom: 3px solid black;
+    width: 3.1em;
+    position: absolute;
+    top: 115%;
+    left: 37%;
+}
+
+.site-main .sign-up-newsletter .form input[type="text"] {
+    width: 18em;
+    border: 1px solid black;
+    padding: 0.3em 0em;
+}
+
+.site-main .sign-up-newsletter .form input[type="button"] {
+    padding: 0.3em 1em;
+    background-color: white;
+    font-weight: 649;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.site-main .testimonials-section {
+    background-image: url('851d5f910ca5e0b7b2a222a93168473192ff6cbf94c8d91beb2b9ac45b73703c-1599486904.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 2em;
+    padding-block-end: 2em;
+}
+
+.testimonials-list {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 78em;
+}
+
+.testimonial-card {
+    flex: 0 0 19em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+    font-style: italic;
+}
+
+.testimonial-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+}
+
+.testimonial-name {
+    font-weight: bold;
+}
+
+.testimonial-card-media {
+    width: 8em;
+    border-radius: 50%;
+    height: 128px;
+    object-fit: cover;
+    box-shadow: 0 0 19px 1px rgba(0, 0, 0, 0.4);
+}
+
+.testimonials-section {
+    box-shadow: 0 0 19px 1px rgba(0, 0, 0, 0.2);
+}
+
+.site-main .testimonials-section h2 {
+    position: relative;
+}
+
+.site-main .testimonials-section h2 .border-bottom {
+    border-bottom: 3px solid black;
+    width: 2.7em;
+    position: absolute;
+    top: 115%;
+    left: 27.5%;
+}

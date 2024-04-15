@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Site Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 2em;
+        }
+
+        h1 {
+            padding-block-end: 1em;
+        }
+
+        aside ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1em;
+            overflow: hidden;
+        }
+
+        aside {
+            flex-direction: column;
+        }
+
+        aside ul a {
+            text-decoration: none;
+        }
+
+        main ul {
+            margin-left: 3em;
+        }
+
+        header, main, aside, footer {
+            background-color: #B5D8FF;
+            border-radius: 0.4em;
+            padding: 2em;
+            /* color: #fff; */
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 1em;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 800px) {
+            .container {
+                flex-direction: row;
+                flex-wrap: wrap;
+             }
+
+            header, footer {
+                flex: 0 0 100%;
+                border-radius: 0.4em;
+            }
+         
+            .wrapper {
+                flex: 0 0 100%;
+                flex-direction: row-reverse;
+            }
+
+            aside {
+                flex: 1 0 auto;
+            }
+
+            main {
+                 flex: 0 0 65%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                margin: 0 auto;
+                max-width: 60em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome</h1>
+        </header>
+    
+        <div class="wrapper">
+            <main>
+                <h1>Tasks: 6</h1>
+            
+                <ul>
+                    <li>Open: 3</li>
+                    <li>In Progress: 1</li>
+                    <li>Done: 2</li>
+                </ul>
+            </main>
+        
+            <aside>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Create</a></li>
+                </ul>
+            </aside>
+        </div>
+    
+        <footer>
+            <p>&copy; 2021 - Taks Board</p>
+        </footer>
+    </div>
+</body>
+</html>

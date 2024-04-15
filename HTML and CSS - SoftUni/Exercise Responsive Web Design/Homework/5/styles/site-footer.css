@@ -1,0 +1,39 @@
+.site-footer {
+    display: flex;
+    padding: 2em;
+    justify-content: space-evenly;
+    gap: 3em;
+}
+
+/* .second-column ul li {
+    list-style: none;
+    list-style-position: inside;
+    display: flex;
+    gap: 8em;
+} */
+
+.first-column {
+    flex: 0 0 12%;
+}
+
+.second-column .footer-lists {
+    display: flex;
+    gap: 4em;
+}
+
+.footer-lists ul li {
+    list-style: none;
+}
+
+.footer-lists ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.third-column ul li {
+    list-style: none;
+}
+
+.site-footer .fa-solid {
+    padding-inline-end: 1em;
+}
