@@ -7,7 +7,10 @@
 </head>
 <body>
     <form action="#">
-        <datalist>
+        <label for="browser-list">Choose a browser:</label>
+        <input list="browser-select" id="browser-list" name="browser">
+
+        <datalist id="browser-select">
             <option value="Edge"></option>
             <option value="Firefox"></option>
             <option value="Chrome"></option>
