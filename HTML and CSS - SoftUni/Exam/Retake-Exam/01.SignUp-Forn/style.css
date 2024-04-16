@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 14px/1.5 'Kode Mono'
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #acacac;
+}
+
+body, input, button {
+    font: inherit;
+}
+
+.sign-up-form {
+    padding: 1.8em;
+    display: flex;
+    flex-direction: column;
+    background-color: #24333C;
+    color: #fff;
+    gap: 2.14em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 19px 1px rgba(0, 0, 0, 0.4);
+}
+
+.email-password-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2.14em;
+}
+
+input:not(input[type="button"]) {
+    background-color: transparent;
+    border: 1px solid #6f7a7c;
+    padding: 0.1em 0.3em;
+    border-radius: 0.1px;
+}
+
+input:not(input[type="button"])::placeholder {
+    color: #8c9697;
+}
+
+input[type="button"] {
+    cursor: pointer;
+}
+
+.buttons-wrapper {
+    display: flex;
+}
+
+.buttons-wrapper input[value="Sign Up"],
+.buttons-wrapper input[value="Log In"] {
+    padding: 0.6em 0em;
+    border: none;
+}
+
+.buttons-wrapper input[value="Sign Up"] {
+    background-color: #1AB188;
+    color: #fff;
+    flex: 0 0 50%;
+}
+
+.buttons-wrapper input[value="Log In"] {
+    background-color: #435359;
+    color: #6D8991;
+    flex: 0 0 50%;
+}
+
+.buttons-wrapper input[value="Log In"]:hover {
+    background-color: #179A77;
+    color: #fff;
+}
+
+.form-header {
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: normal;
+}
+
+.field-name-wrapper {
+    display: flex;
+    gap: 1.2em;
+    position: relative;
+}
+
+input.first-name,
+input.last-name {
+    width: 11.5em;
+}
+
+input[type="email"],
+input[type="password"] {
+    flex: 0 0 100%;
+}
+
+input.get-started {
+    font-size: 1.6em;
+    background-color: #1AB188;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 0.2em 0em;
+    letter-spacing: 0.1em;
+}
+
+.star {
+    color: #1BAF89;
+}
+
+.star.first-name {
+    position: absolute;
+    top: 13%;
+    left: 25%;
+}
+
+.star.last-name {
+    position: absolute;
+    top: 13%;
+    left: 75%;
+}
+
+input.first-name:valid + span {
+    display: none;
+}
+
+input.last-name:valid + span {
+    display: none;
+}
+
+.star.email {
+    position: absolute;
+    top: 3%;
+    left: 32%;
+}
+
+.star.password {
+    position: absolute;
+    top: 71%;
+    left: 35%;
+}
+
+input[type="email"]:focus + span {
+    display: none;
+}
+
+input[type="password"]:valid + span {
+    display: none;
+}
