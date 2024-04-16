@@ -1,1 +1,286 @@
 @import url('o	https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&amp;display=swap');
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font: 10px/1.5 'PT Sans', sans-serif; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    scroll-behavior: smooth;
+    
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('images/background.jpg');
+    background-size: 100% 530px, contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+body, table, input, button {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-block-end: 0.5em;
+}
+
+p {
+    padding-block-end: 1.2em;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em 0em;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.site-header .navigation {
+    display: flex;
+}
+
+.site-header .navigation li {
+    list-style: none outside;
+    padding-inline-end: 2em;
+}
+
+.site-header .navigation li a {
+    color: #282A2C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-header .site-title {
+    width: 8em;
+}
+
+.site-section.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding-block-end: 8em;
+    position: relative;
+    z-index: 2;
+}
+
+.site-section.banner h2 {
+    font-size: 3.2em;
+    margin: 0;
+}
+
+.site-section.banner .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-section.banner p {
+    padding: 0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.site-section.banner .banner-button {
+    font-size: 1.1em;
+    border: none;
+    padding: 0.6em 1em;
+    border-radius: 0.3em;
+    background-color: #E7EEF0;
+    color: #72757A;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.site-section.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0em;
+    background-color: #60ACC1;
+    position: relative;
+    z-index: 2;
+}
+
+.site-section.catalog h4 {
+    font-size: 1.5em;
+}
+
+.site-section.catalog p {
+    color: #3c5457;
+}
+
+.catalog-card-list {
+    display: flex;
+    justify-content: center;
+    gap: 14.4em;
+    padding-block-start: 1.0em;
+}
+
+.catalog-card {
+    flex: 0 0 34.4em;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 19px 1px rgba(0, 0, 0, 0.3);
+}
+
+.catalog-card::after {
+    content: '';
+    width: 2.4em;
+    background-color: #60ACC1;
+}
+
+.catalog-card-media {
+    flex: 0 0 18.3em;
+    height: 100%;
+}
+
+.catalog-card-media.home {
+    background-image: url('images/home-set.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.catalog-card-media.beach {
+    background-image: url('images/beach-set.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.catalog-card-content {
+    padding: 3.9em 1.5em;
+}
+
+.catalog-card-content h5 {
+    font-size: 1em;
+    text-align: center;
+}
+
+.catalog-card-content p {
+    padding: 0em;
+}
+
+.site-section.catalog h4 {
+    margin: 0;
+}
+
+.site-section.model-furniture-examples {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 9em;
+    padding: 2em;
+}
+
+.model-furniture-examples-card {
+    flex: 0 0 23.4em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.model-furniture-examples-card-media img {
+    width: 8.6em;
+    height: 84px;
+}
+
+.model-furniture-examples-card-content h4 {
+    font-size: 1.3em;
+    color: #72829E;
+}
+
+.model-furniture-examples-card-content p {
+    color: #a3a6ad;
+}
+
+.site-section.catalog-furniture-photos {
+    background-color: #60ACC1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.8em 0em;
+}
+
+.site-section.catalog-furniture-photos h4 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.site-section.catalog-furniture-photos p {
+    padding: 0;
+    font-style: italic;
+    color: #3c5457;
+}
+
+.furniture-photos-list {
+    display: flex;
+    justify-content: center;
+    padding-block-start: 2em;
+    gap: 5.4em;
+}
+
+.furniture-photo {
+    flex: 0 0 22.4em;
+    box-shadow: 0 0 19px 1px rgba(0, 0, 0, 0.6);
+}
+
+.site-section.about-us {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3.5em 0em;
+}
+
+.site-section.about-us p {
+    color: #747679;
+}
+
+.about-us-heading h4 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #5E6063;
+}
+
+.about-us-heading p {
+    font-style: italic;
+}
+
+.about-us-paragraph {
+    max-width: 60em;
+}
+
+.site-footer {
+    background-color: #2D333C;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.site-footer p {
+    padding: 0;
+}
