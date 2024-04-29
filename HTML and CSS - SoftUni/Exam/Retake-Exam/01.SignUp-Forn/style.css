@@ -149,10 +149,18 @@ input.last-name:valid + span {
     left: 35%;
 }
 
-input[type="email"]:focus + span {
+input[type="email"]:valid + span {
     display: none;
+}
+
+input[type="email"]:focus {
+    color: #fff;
 }
 
 input[type="password"]:valid + span {
     display: none;
+}
+
+input:valid {
+    color: #fff;
 }
