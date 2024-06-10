@@ -1,0 +1,36 @@
+html {
+    font: 12px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+@media (min-width: 800px) {
+    html {
+        font-size: 14px;
+    }   
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }   
+}
+
+body, table, input {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    padding-block-end: 0.3em;
+    margin-block-end: 0.5em;
+}
+
+h1 { font-size: 2.4em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
+
+p {
+    padding-block-end: 1.3em;
+}

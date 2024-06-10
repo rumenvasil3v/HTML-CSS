@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            box-sizing: border-box;
+            font: 14px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        *, *::after, *::before {
+            box-sizing: inherit;
+        }
+
+        body {
+            background-color: #ccc;
+            font: inherit;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-inline: 2em;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .comment-section-list,
+        .comment-section-first {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+
+        .comment-section-list {
+            width: 100vw;
+            container-type: inline-size;
+            container-name: card; 
+        }
+
+        @media (min-width: 1200px) {
+            .comment-section-list {
+                width: 100em;
+                margin: 0 auto;
+                flex-direction: row;
+            }
+
+            .comment-section {
+                height: 17em;
+            }
+
+            .comment-section-first .content {
+                justify-content: center;
+            }
+        }
+
+        .comment-section.differ {
+            flex: 0 0 20em;
+            height: auto;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .comment-section.differ p {
+            padding-block-end: 2em;
+            border-bottom: 1px solid #B1ADBF;
+        }
+
+        .comment-section.differ .author {
+            padding-inline-start: 1em;
+            display: flex;
+            align-items: center;
+            gap: 0.6em;
+        }
+
+        .comment-section.differ .author .writer,
+        .comment-section.differ .author .vacancy {
+            font-size: 1.42em;
+            
+        }
+
+        .comment-section.differ .author .writer {
+            font-weight: 600;
+        }
+
+        .comment-section.differ .author .vacancy
+        {
+            font-weight: normal;
+        }
+
+        .comment-section.differ .circle {
+            flex: 0 0 4.71em;
+            height: 4.71em;
+        }
+
+        .comment-section {
+            display: flex;
+            padding: 1em;
+            background-color: #fff;
+            flex-direction: row;
+            gap: 2em;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .media {
+            width: 3.79em;
+        }
+
+        .content p {
+            color: #B1ADBF;
+            font-size: 1.21em;
+        }
+
+        .content .writer {
+            font-size: 1.42em;
+            font-weight: 400;
+        }
+
+        .circle {
+            object-fit: cover;
+            border-radius: 50%;
+            flex: 0 0 8.71em;
+            height: 8.71em;
+            background-color: #27E527;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="comment-section-list">
+
+        <div class="comment-section-first">
+            <section class="comment-section">
+                <div class="content">
+                    <div class="media"><img src="Quotation-Symbol-PNG-3302734258-removebg-preview.png" alt=""></div>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam eum soluta fuga suscipit, eos omnis dolores dolore tempora id expedita alias! Facilis dolorum culpa quam beatae dolore eaque debitis autem?</p>
+
+                    <span class="writer">Author</span>
+                </div>
+
+                <div class="circle"><img class="circle" src="tabitha-turner-trNJdd2Kl5c-unsplash.jpg" alt=""></div>
+            </section>
+
+            <section class="comment-section">
+                <div class="content">
+                    <div class="media"><img src="Quotation-Symbol-PNG-3302734258-removebg-preview.png" alt=""></div>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam eum soluta fuga suscipit, eos omnis dolores dolore tempora id expedita alias! Facilis dolorum culpa quam beatae dolore eaque debitis autem?</p>
+
+                    <span class="writer">Author</span>
+                </div>
+
+                <div class="circle"><img class="circle" src="tabitha-turner-trNJdd2Kl5c-unsplash.jpg" alt=""></div>
+            </section>
+        </div>
+
+        <section class="comment-section differ">
+            <div class="content">
+                <div class="media"><img src="Quotation-Symbol-PNG-3302734258-removebg-preview.png" alt=""></div>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam eum soluta fuga suscipit, eos omnis dolores dolore tempora id expedita alias! Facilis dolorum culpa quam beatae dolore eaque debitis autem?</p>
+
+            </div>
+
+            <div class="author">
+                <div class="circle"><img class="circle" src="tabitha-turner-trNJdd2Kl5c-unsplash.jpg" alt=""></div>
+                <div class="author-info">
+                    <span class="writer">Author</span>
+                    <span class="vacancy">Engineer</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

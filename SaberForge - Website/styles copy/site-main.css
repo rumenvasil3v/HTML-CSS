@@ -1,0 +1,378 @@
+.site-main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    padding-top: 1em;
+    position: relative;
+}
+
+.main-wrapper {
+    background-image: url('../banners/ps-sins-banner.jpg');
+    background-size: 100% 100vh, contain;
+    background-repeat: no-repeat;
+}
+
+.banner-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4em;
+    color: #fff;
+    position: relative;
+}
+
+.banner-section * {
+    margin: 0;
+    padding: 0;
+}
+
+.banner-section-button {
+    color: #fff;
+    border: none;
+    background-color: #0277bd;
+    padding: 10px 18px;
+    font-size: 15.6px;
+    border-radius: 0.2em;
+}
+
+.banner-section-paragraph {
+    font-size: 22px;
+}
+
+.banner-section-title {
+    font-size: 70px;
+}
+
+.invicible {
+    height: 210.17px;
+}
+
+.categories-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
+    gap: 2em;
+    color: #c9b2ee;
+    position: relative;
+}
+
+.categories-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.categories-section-content h2 {
+    font-size: 35px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.categories-section-content p {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.categories-list {
+    display: flex;
+    gap: 5em;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.category-card p {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.category-card .media {
+    border-radius: 50%;
+    border: 2px solid #BFBFBF;
+    padding: 0.7em;
+}
+
+.category-card .media img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.make-saber-section * {
+    margin: 0;
+    padding: 0;
+}
+
+.make-saber-section {
+    background-image: url('../banners/asp-banner-06.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%, 90vh, contain;
+    padding: 13em 0;
+}
+
+.make-saber-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    align-items: flex-start;
+    margin-left: 20em;
+}
+
+.make-saber-section-headers h2 {
+    color: #fff;
+    font-size: 35px;
+}
+
+.horizontal-line {
+    width: 7em;
+    height: 0.3em;
+    background-color: #fff;
+}
+
+.make-saber-section p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.learn-more {
+    color: #fff;
+    border: none;
+    background-color: #0277bd;
+    padding: 10px 18px;
+    font-size: 15.6px;
+    border-radius: 0.2em;
+}
+
+.unleash-creativity-section {
+    background-image: url('../banners/custom-finishes25.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%, 90vh, contain;
+    padding: 13em 0;
+}
+
+.unleash-creativity-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    align-items: flex-end;
+    margin-right: 20em;
+    text-align: end;
+    color: #fff;
+}
+
+.ultimate-quality-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
+}
+
+.ultimate-quality-section * {
+    margin: 0;
+    padding: 0;
+}
+
+.ultimate-quality-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.ultimate-quality-section-content h2 {
+    font-size: 35px;
+    color: #424242;
+}
+
+.ultimate-quality-section-content p {
+    font-size: 14px;
+    color: #424242;
+}
+
+.media-sponsor {
+    width: 1200px;
+    height: 187.5px;
+}
+
+.suit-up-section {
+    background-image: url('../banners/cosplay-spot-wd.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%, 90vh, contain;
+    padding: 13em 0;
+}
+
+.suit-up-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    align-items: flex-end;
+    margin-right: 20em;
+    text-align: end;
+    color: #fff;
+}
+
+.statistics img {
+    width: 64px;
+    height: 64px;
+}
+
+.customers-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customers-section h2 {
+    color: #424242;
+    font-size: 35px;
+    padding-top: 2em;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    align-items: center;
+}
+
+.statistics {
+    display: flex;
+    gap: 1em;
+}
+
+.count-reviews {
+    padding-right: 3em;
+    border-right: 1px solid #339999;
+    color: #339999;
+}
+
+.people-opinion {
+    display: flex;
+    padding: 2em;
+    gap: 2em;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.customer-card {
+    flex: 0 0 13em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #424242;
+}
+
+.customer-card .header-customer-card {
+    font-weight: bold;
+}
+
+.customer-card .author-customer-card {
+    color: #ABABAB;
+    margin-top: auto;
+}
+
+.media-gallery img {
+    width: 635.75px;
+    height: 476.81px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.get-started-section {
+    background-image: url('../banners/custom-sabers01.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%, 90vh, contain;
+    padding: 13em 0;
+}
+
+.get-started-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    align-items: flex-end;
+    margin-right: 20em;
+    text-align: end;
+    color: #fff;
+}
+
+.featured-sabers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding-top: 3em;
+    color: #424242;
+}
+
+.featured-sabers * {
+    margin: 0;
+    padding: 0;
+}
+
+.featured-saber-card-media img {
+    width: 300px;
+    height: 250px;
+}
+
+.featured-sabers-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.featured-sabers-content h2 {
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+.featured-sabers-content p {
+    font-size: 14px;
+}
+
+.featured-sabers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.featured-saber-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #EEEEEE;
+}
+
+.featured-saber-card-content {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.8em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+.featured-saber-card-content h3 {
+    font-size: 16px;
+}
+
+.featured-saber-card-content .price {
+    font-weight: bold;
+}

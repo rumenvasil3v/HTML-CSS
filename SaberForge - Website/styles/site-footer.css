@@ -1,0 +1,42 @@
+.site-footer {
+    display: flex;
+    gap: 13em;
+    background-color: #e4e4e4;
+    padding: 2em;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.site-footer h4 {
+    font-size: 17px;
+    color: #424242;
+}
+
+.site-footer .column li {
+    list-style: none;
+}
+
+.site-footer .column li a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 14px;
+}
+
+.newsletter-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.newsletter-content form input {
+    width: 285px;
+    height: 46px;
+    border: none;
+    padding: 0.4em 0.8em;
+}
+
+.newsletter-content form input[type="button"] {
+    background-color: #0277bd;
+    color: #fff;
+    font-size: 15.6px;
+}

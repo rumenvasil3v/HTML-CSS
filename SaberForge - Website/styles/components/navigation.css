@@ -1,0 +1,14 @@
+.navigation ul {
+    display: flex;
+    gap: 7em;
+}
+
+.navigation ul li {
+    list-style: none;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+}
